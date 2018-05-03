@@ -2,41 +2,157 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Spotify Clone</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-Premium Discover Help Download
 
-Music for everyone.
-Spotify is now free on mobile, tablet and computer.
-Listen to the right music, wherever you are.
+  <header id="header">
+    <nav class="navbar navbar-expand-lg navbar-light between">
+      <a class="navbar-brand" href="#">
+        <img src="images/spotify-logo.png" alt="Spotify Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Premium</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Discover</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Download</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-What’s on Spotify?
+  <section id="gallery" class="text-white text-center">
 
-Millions of Songs
-There are millions of
-songs on Spotify
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+            <h2>Music for everyone.</h2>
+            <p>Spotify is now free on mobile, tablet and computer.
+            <br>Listen to the right music, wherever you are.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+            <h2>Everyone for music.</h2>
+            <p>Spotify is now free on mobile, tablet and computer.
+            <br>Listen to the right music, wherever you are.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
-HD Music
-Listen to music as if you
-were listening live
+  </section>
 
-Stream Everywhere
-Stream music on your
-smartphone, tablet or
-computer
+  <section id="features" class="text-center">
 
-It’s as yeezy as Kanye West.
-Search
-Know what you want to listen to?
-Just search and hit play.
-Browse
-Check out the latest charts,
-brand new releases and great
-playlists for right now.
-Discover
-Enjoy new music every Monday
-with your own personal playlist.
-Or sit back and enjoy Radio.
+    <h2>What’s on Spotify?</h2>
+
+    <div class="container">
+      <ul class="row list-unstyled">
+        <li class="col-12 col-md-6 col-lg-4">
+          <img src="images/music-icon.png" alt="">
+          <h3 class="text-primary">Millions of Songs</h3>
+          <p>There are millions of songs on Spotify</p>
+        </li>
+        <li class="col-12 col-md-6 col-lg-4">
+          <img src="images/high-quality-icon.png" alt="">
+          <h3 class="text-primary">HD Music</h3>
+          <p>Listen to music as if you were listening live</p>
+        </li>
+        <li class="col-12 col-md-6 col-lg-4">
+          <img src="images/devices-icon.png" alt="">
+          <h3 class="text-primary">Stream Everywhere</h3>
+          <p>Stream music on your smartphone, tablet or computer</p>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- <section id="features" class="text-center">
+
+    <h2>What’s on Spotify?</h2>
+
+    <div class="container">
+      <ul class="row list-unstyled">
+        <li class="">
+          <img src="images/music-icon.png" alt="">
+          <h3 class="text-primary">Millions of Songs</h3>
+          <p>There are millions of songs on Spotify</p>
+        </li>
+        <li class="">
+          <img src="images/high-quality-icon.png" alt="">
+          <h3 class="text-primary">HD Music</h3>
+          <p>Listen to music as if you were listening live</p>
+        </li>
+        <li class="">
+          <img src="images/devices-icon.png" alt="">
+          <h3 class="text-primary">Stream Everywhere</h3>
+          <p>Stream music on your smartphone, tablet or computer</p>
+        </li>
+      </ul>
+    </div>
+
+  </section> -->
+
+  <section id="yeezy" class="text-white bg-primary">
+
+    <h2>It’s as yeezy as Kanye West.</h2>
+
+    <div class="row justify-content-center justify-content-md-between align-items-start">
+
+      <dl class="col-12 col-md-4">
+        <dt>Search</dt>
+        <dd>Know what you want to listen to? Just search and hit play.</dd>
+        <dt>Browse</dt>
+        <dd>Check out the latest charts, brand new releases and great playlists for right now.</dd>
+        <dt>Discover</dt>
+        <dd>Enjoy new music every Monday with your own personal playlist. Or sit back and enjoy Radio.</dd>
+      </dl>
+
+      <img class="col-4 col-md-2 align-self-center order-1 order-md-0 mt-5 mt-md-0"
+        src="images/spotify-icon-white.png" alt="">
+      <img class="col-12 col-md-3" src="images/spotify-app.jpg" alt="">
+
+    </div>
+
+  </section>
+
+
+
 </body>
 </html>
